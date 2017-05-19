@@ -1,0 +1,10 @@
+{
+  "description": "Bickleigh Drupal theme",
+  "license": "GPL",
+  "repository": "https://github.com/3sd/bickeigh",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

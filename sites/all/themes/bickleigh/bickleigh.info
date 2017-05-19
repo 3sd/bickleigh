@@ -1,0 +1,9 @@
+name = Bickleigh
+core = 7.x
+
+stylesheets[all][] = css/bickleigh.css
+stylesheets[all][] = css/font-awesome/css/font-awesome.min.css
+
+scripts[] = js/bootstrap.min.js
+
+regions[content] = Content
