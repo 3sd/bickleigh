@@ -7019,7 +7019,7 @@ function drupal_common_theme() {
       'render element' => 'element',
     ),
     'menu_local_tasks' => array(
-      'variables' => array('primarya' => array(), 'secondary' => array()),
+      'variables' => array('primary' => array(), 'secondary' => array()),
     ),
     // From form.inc.
     'select' => array(
