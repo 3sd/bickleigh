@@ -17,6 +17,11 @@
         ));?>
       <div class="nav navbar-nav navbar-right">
         <?php print render($page['navbar-right']); ?>
+        <?php print theme('links', array(
+          'links' => menu_navigation_links('user-menu'),
+          'attributes' => array( 'class' => array('nav', 'navbar-nav', 'navbar-right'))
+        ));?>
+
       </div>
     </div><!--/.navbar-collapse -->
   </div>

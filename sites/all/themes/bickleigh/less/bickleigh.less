@@ -1,21 +1,25 @@
-@import '../vendor/twbs/bootstrap/less/bootstrap.less';
 
-// Scheme colors
-@straw: #e7c993;
-@teal: #4fa1ac;
-@dark-teal: #377687;
-@navy: #1e3944;
-@brown: #8c7567;
+@import '../node_modules/bootstrap/less/bootstrap.less';
 
-//
-@font-family-sans-serif: Hind, sans-serif;
-
-@link-color: @dark-teal;
-// Navigation bar50
-@navbar-default-bg: lighten(@straw, 15%);
-@navbar-default-link-color: @navy;
+// @font-family-sans-serif: Hind, sans-serif;
 
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');
+
+// Login block
+.block-user{
+  label{
+    display: none;
+  }
+  .form-item, .form-actions{
+    display: inline-block;
+  }
+
+  .item-list ul li{
+    display: inline;
+    margin: 0;
+  }
+
+}
 
 
 //image 11 16 19 25 34 38a 41 51 54 96
