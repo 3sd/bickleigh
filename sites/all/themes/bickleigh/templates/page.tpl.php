@@ -15,6 +15,9 @@
           'links' => menu_navigation_links('main-menu'),
           'attributes' => array( 'class' => array('nav', 'navbar-nav'))
         ));?>
+      <div class="nav navbar-nav navbar-right">
+        <?php print render($page['navbar-right']); ?>
+      </div>
     </div><!--/.navbar-collapse -->
   </div>
 </nav>
