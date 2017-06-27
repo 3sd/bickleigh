@@ -2,8 +2,25 @@
 @import '../node_modules/bootstrap/less/bootstrap.less';
 
 // @font-family-sans-serif: Hind, sans-serif;
+// @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');
 
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');
+// skip to nav
+.element-invisible{
+  display: none;
+}
+
+// Tabs
+.tabs{
+  .nav-tabs;
+  .nav;
+}
+
+// General layout and spacing
+
+.alert, .region-content .block{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 // Login block
 .block-user{
@@ -19,7 +36,53 @@
     margin: 0;
   }
 
+  .login-links{
+    .text-right
+  }
 }
+
+// Adverts
+
+#block-views-adverts-block-1{
+  .panel;
+  .panel-default;
+
+  > .content{
+    .panel-body
+  }
+}
+
+
+// Forms
+
+.form-item{
+  .form-group
+}
+
+.form-submit{
+  .btn;
+  .btn-default
+}
+
+input[type=text], input[type=password]{
+  .form-control;
+}
+
+.form-submit{
+  .btn;
+  .btn-primary;
+}
+
+// CiviCRM profile forms
+
+.crm-public{
+  div.label{
+    color: @text-color;
+    font-size: 100%;
+    padding: 0;
+  }
+}
+
 
 
 //image 11 16 19 25 34 38a 41 51 54 96
