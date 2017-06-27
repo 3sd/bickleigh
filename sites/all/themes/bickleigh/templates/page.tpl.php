@@ -34,6 +34,8 @@
   <?php print render($page['content']); ?>
   <?php print $feed_icons; ?>
 </div>
-<div class="container">
-  <?php print render($page['adverts']); ?>
+<div class="adverts">
+  <div class="container">
+    <?php print render($page['adverts']); ?>
+  </div>
 </div>
