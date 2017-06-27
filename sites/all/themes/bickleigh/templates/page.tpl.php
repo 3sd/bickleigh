@@ -30,7 +30,7 @@
   <?php if (isset($tabs['primary']) && $tabs['primary'] || isset($tabs['secondary']) && $tabs['secondary']): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
   <?php print render($page['help']); ?>
   <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-  <?php if ($messages): ?><div class="alert alert-info" role="alert"><?php print $messages; ?></div><?php endif; ?>
+  <?php if ($messages): ?><?php print $messages; ?><?php endif; ?>
   <?php print render($page['content']); ?>
   <?php print $feed_icons; ?>
 </div>
