@@ -7,4 +7,5 @@ stylesheets[all][] = css/font-awesome/css/font-awesome.min.css
 scripts[] = js/bootstrap.min.js
 
 regions[content] = Content
+regions[adverts] = Adverts
 regions[navbar-right] = Right navbar

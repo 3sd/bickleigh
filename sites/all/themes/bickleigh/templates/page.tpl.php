@@ -33,5 +33,7 @@
   <?php if ($messages): ?><?php print $messages; ?><?php endif; ?>
   <?php print render($page['content']); ?>
   <?php print $feed_icons; ?>
-
+</div>
+<div class="container">
+  <?php print render($page['adverts']); ?>
 </div>
