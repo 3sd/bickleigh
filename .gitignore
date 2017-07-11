@@ -10,5 +10,6 @@ sites/*/private
 # scout ignore
 scout-instance.json
 sites/all/civicrm_extensions/cache
+sites/*/civicrm.settings*.php
 
 TODO.md
