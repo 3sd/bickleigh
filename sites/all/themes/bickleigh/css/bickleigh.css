@@ -6730,6 +6730,13 @@ button.close {
 }
 /* SITE WIDE */
 /* Fonts */
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.view h2 {
+  font-size: 30px;
+}
 /* Colours */
 /* Spacing */
 /* PAGE ELEMENTS */
@@ -6743,6 +6750,13 @@ button.close {
 }
 .navbar input {
   background-color: #b9134d;
+}
+/* Nodes */
+.submitted-by {
+  font-weight: 700;
+  display: block;
+  margin-top: -5px;
+  margin-bottom: 15px;
 }
 /* Login block */
 .block-user label {
@@ -7746,7 +7760,8 @@ fieldset[disabled] .links.inline li.focus {
   color: #fff;
 }
 .view-news .view-content .item,
-.view-events .view-content .item {
+.view-events .view-content .item,
+.view-groups .view-content .item {
   height: 220px;
 }
 /* Hide text formats */

@@ -7,6 +7,15 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran:400,700');
 @font-family-sans-serif: Catamaran, sans-serif;
 
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.view h2{
+  font-size: 30px;
+}
+
 /* Colours */
 
 @burgundy: #8b0e3a;
@@ -47,6 +56,14 @@
   background-color: lighten(@navbar-default-bg, 10%);
 }
 
+/* Nodes */
+
+.submitted-by{
+  font-weight: 700;
+  display: block;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
 
 /* Login block */
 
@@ -183,7 +200,7 @@ input[type=text], input[type=password]{
   }
 }
 
-.view-news, .view-events{
+.view-news, .view-events, .view-groups{
   .view-content .item{
     height: 220px;
   }
