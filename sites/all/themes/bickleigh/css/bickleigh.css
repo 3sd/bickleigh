@@ -6775,6 +6775,11 @@ h2 {
 .block-user .login-links {
   text-align: right;
 }
+#block-views-events-block-1,
+#block-views-groups-block {
+  border-top: 5px solid #a7a7a7;
+  border-top: 5px solid #8b0e3a;
+}
 /* Main section */
 .main {
   padding-bottom: 40px;
@@ -7421,6 +7426,7 @@ fieldset[disabled] .action-links li.focus {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  border-bottom: none;
 }
 .tabs > li {
   float: left;
