@@ -1,42 +1,57 @@
 @import '../node_modules/bootstrap/less/bootstrap.less';
 
-// @font-family-sans-serif: Hind, sans-serif;
-// @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');
+/* SITE WIDE */
 
-// skip to nav
-.element-invisible{
-  display: none;
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,700');
+@font-family-sans-serif: Catamaran, sans-serif;
+
+/* Colours */
+
+@burgundy: #8b0e3a;
+@teal: #02778b;
+@navy: #01395e;
+@stone: #747474;
+
+@brand-primary: @teal;
+
+/* Spacing */
+
+// @border-radius-large:       0px;
+// @border-radius-small:       0px;
+
+
+/* PAGE ELEMENTS */
+
+/* Navbar */
+
+@navbar-padding-vertical: 20px;
+
+@navbar-default-bg: @burgundy;
+@navbar-border-radius: 0px;
+@navbar-default-color: #fff;
+.navbar a{
+  color: @navbar-default-link-color;
+}
+@navbar-default-link-color: #fff;
+@navbar-default-link-active-bg:  darken(@navbar-default-bg, 4%);
+@navbar-default-link-active-color:  darken(@navbar-default-color, 4%);
+// @navbar-default-link-active-color:
+@navbar-default-link-hover-color: @navbar-default-brand-hover-color;
+
+.navbar-brand{
+  font-size: 220%;
+  font-weight: 700;
 }
 
-// Tabs
-.tabs{
-  .nav-tabs;
-  .nav;
+.navbar input {
+  background-color: lighten(@navbar-default-bg, 10%);
 }
 
-// General layout and spacing
 
-.alert, .region-content .block{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+/* Login block */
 
-// alerts
-
-.messages.status{
-  .alert;
-  .alert-info;
-}
-.messages.warning{
-  .alert;
-  .alert-warning;
-}
-.messages.error{
-  .alert;
-  .alert-danger;
-}
-
-// Login block
 .block-user{
   label{
     display: none;
@@ -54,8 +69,24 @@
     .text-right
   }
 }
+/* Adverts */
 
-// Forms
+.adverts{
+  background-color: @gray-lighter;
+  padding: 40px 0;
+  box-shadow: 0px 1000px 0px 1000px @gray-lighter;
+}
+
+#block-views-advert-block{
+  .panel;
+  .panel-default;
+
+  > .content{
+    .panel-body
+  }
+}
+
+/* Forms */
 
 .form-item{
   .form-group
@@ -75,16 +106,6 @@ input[type=text], input[type=password]{
   .btn-primary;
 }
 
-// CiviCRM profile forms
-
-.crm-public{
-  div.label{
-    color: @text-color;
-    font-size: 100%;
-    padding: 0;
-  }
-}
-
 .action-links{
   padding: 14px 0;
   .btn-group;
@@ -98,23 +119,62 @@ input[type=text], input[type=password]{
     color: #fff;
   }
 }
+/* - CiviCRM profile forms */
 
-// Adverts
-
-.adverts{
-  background-color: #f8f8f8;
-  border-top: 1px solid #e7e7e7;
-  padding: 40px 0;
-}
-
-#block-views-advert-block{
-  .panel;
-  .panel-default;
-
-  > .content{
-    .panel-body
+.crm-public{
+  div.label{
+    color: @text-color;
+    font-size: 100%;
+    padding: 0;
   }
 }
 
+
+
+/* DRUPAL TWEAKS */
+
+/* - Hide skip to nav */
+
+.element-invisible{
+  display: none;
+}
+
+/* Make tabs above content look like navs */
+
+.tabs{
+  .nav-tabs;
+  .nav;
+}
+
+/* Make messages look like Drupal messages */
+
+.messages.status{
+  .alert;
+  .alert-info;
+}
+.messages.warning{
+  .alert;
+  .alert-warning;
+}
+.messages.error{
+  .alert;
+  .alert-danger;
+}
+
 /* Hide text formats */
+
 .filter-wrapper {display: none}
+
+
+
+// // General layout and spacing
+//
+// .alert, .region-content .block{
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+// }
+//
+//
+//
+//
+//
