@@ -7517,6 +7517,8 @@ fieldset[disabled] .action-links li.focus {
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: #d9edf7;
   border-color: #bce8f1;
   color: #31708f;
@@ -7546,6 +7548,8 @@ fieldset[disabled] .action-links li.focus {
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: #fcf8e3;
   border-color: #faebcc;
   color: #8a6d3b;
@@ -7575,6 +7579,8 @@ fieldset[disabled] .action-links li.focus {
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: #f2dede;
   border-color: #ebccd1;
   color: #a94442;
@@ -7599,7 +7605,156 @@ fieldset[disabled] .action-links li.focus {
 .messages.error .alert-link {
   color: #843534;
 }
+/* Read more links should be buttons */
+.links.inline {
+  padding: 14px 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.links.inline > .btn {
+  position: relative;
+  float: left;
+}
+.links.inline > .btn:hover,
+.links.inline > .btn:focus,
+.links.inline > .btn:active,
+.links.inline > .btn.active {
+  z-index: 2;
+}
+.links.inline .btn + .btn,
+.links.inline .btn + .btn-group,
+.links.inline .btn-group + .btn,
+.links.inline .btn-group + .btn-group {
+  margin-left: -1px;
+}
+.links.inline li {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+  background-color: #02778b;
+  border-color: #026172;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.links.inline li:focus,
+.links.inline li:active:focus,
+.links.inline li.active:focus,
+.links.inline li.focus,
+.links.inline li:active.focus,
+.links.inline li.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.links.inline li:hover,
+.links.inline li:focus,
+.links.inline li.focus {
+  color: #333;
+  text-decoration: none;
+}
+.links.inline li:active,
+.links.inline li.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.links.inline li.disabled,
+.links.inline li[disabled],
+fieldset[disabled] .links.inline li {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.links.inline li.disabled,
+fieldset[disabled] a.links.inline li {
+  pointer-events: none;
+}
+.links.inline li:focus,
+.links.inline li.focus {
+  color: #fff;
+  background-color: #014c59;
+  border-color: #000000;
+}
+.links.inline li:hover {
+  color: #fff;
+  background-color: #014c59;
+  border-color: #012e36;
+}
+.links.inline li:active,
+.links.inline li.active,
+.open > .dropdown-toggle.links.inline li {
+  color: #fff;
+  background-color: #014c59;
+  border-color: #012e36;
+}
+.links.inline li:active:hover,
+.links.inline li.active:hover,
+.open > .dropdown-toggle.links.inline li:hover,
+.links.inline li:active:focus,
+.links.inline li.active:focus,
+.open > .dropdown-toggle.links.inline li:focus,
+.links.inline li:active.focus,
+.links.inline li.active.focus,
+.open > .dropdown-toggle.links.inline li.focus {
+  color: #fff;
+  background-color: #012e36;
+  border-color: #000000;
+}
+.links.inline li:active,
+.links.inline li.active,
+.open > .dropdown-toggle.links.inline li {
+  background-image: none;
+}
+.links.inline li.disabled:hover,
+.links.inline li[disabled]:hover,
+fieldset[disabled] .links.inline li:hover,
+.links.inline li.disabled:focus,
+.links.inline li[disabled]:focus,
+fieldset[disabled] .links.inline li:focus,
+.links.inline li.disabled.focus,
+.links.inline li[disabled].focus,
+fieldset[disabled] .links.inline li.focus {
+  background-color: #02778b;
+  border-color: #026172;
+}
+.links.inline li .badge {
+  color: #02778b;
+  background-color: #fff;
+}
+.links.inline li a {
+  color: #fff;
+}
+.view-news .view-content .item,
+.view-events .view-content .item {
+  height: 220px;
+}
 /* Hide text formats */
 .filter-wrapper {
   display: none;
+}
+.alert,
+.region-content .block {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

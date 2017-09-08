@@ -167,6 +167,29 @@ input[type=text], input[type=password]{
   .alert-danger;
 }
 
+/* Read more links should be buttons */
+
+.links.inline{
+  padding: 14px 0;
+  .btn-group;
+}
+
+.links.inline li{
+  .btn;
+  .btn-primary;
+  .btn-sm;
+  a{
+    color: #fff;
+  }
+}
+
+.view-news, .view-events{
+  .view-content .item{
+    height: 220px;
+  }
+}
+
+
 /* Hide text formats */
 
 .filter-wrapper {display: none}
@@ -175,10 +198,10 @@ input[type=text], input[type=password]{
 
 // // General layout and spacing
 //
-// .alert, .region-content .block{
-//   margin-top: 10px;
-//   margin-bottom: 10px;
-// }
+.alert, .region-content .block{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 //
 //
 //
