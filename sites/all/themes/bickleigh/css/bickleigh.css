@@ -7581,3 +7581,7 @@ fieldset[disabled] .action-links li.focus {
 #block-views-advert-block > .content {
   padding: 15px;
 }
+/* Hide text formats */
+.filter-wrapper {
+  display: none;
+}
