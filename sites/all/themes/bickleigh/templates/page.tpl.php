@@ -16,7 +16,7 @@
           'attributes' => array( 'class' => array('nav', 'navbar-nav'))
         ));?>
       <div class="nav navbar-nav navbar-right">
-        <?php global $user; if ($user->uid): ?> <p class="navbar-text">Welcome <?php print l($user->name,'user/'.$user->uid); ?></p> <a href="/user/logout" class="btn btn-default navbar-btn">Log out</a><?php endif; ?>
+        <?php global $user; if ($user->uid): ?> <p class="navbar-text">Welcome <?php print l(realname_load($user),'user/'.$user->uid); ?></p> <a href="/user/logout" class="btn btn-default navbar-btn">Log out</a><?php endif; ?>
         <?php print render($page['navbar-right']); ?>
       </div>
     </div><!--/.navbar-collapse -->
