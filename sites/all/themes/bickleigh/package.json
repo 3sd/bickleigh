@@ -1,5 +1,6 @@
 {
   "description": "Bickleigh Drupal theme",
+  "version": "1.0.0",
   "license": "GPL-3.0",
   "repository": "https://github.com/3sd/bickeigh",
   "devDependencies": {
@@ -9,6 +10,5 @@
     "gulp-less": "^3.3.2",
     "bootstrap": "^3.3.7"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

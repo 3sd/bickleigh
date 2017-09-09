@@ -5,6 +5,8 @@ stylesheets[all][] = css/bickleigh.css
 stylesheets[all][] = css/font-awesome/css/font-awesome.min.css
 
 scripts[] = js/bootstrap.min.js
+scripts[] = js/jquery.matchHeight.js
+scripts[] = js/bickleigh.js
 
 regions[content] = Content
 regions[adverts] = Adverts

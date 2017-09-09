@@ -7776,8 +7776,6 @@ fieldset[disabled] .links.inline li.focus {
   display: -ms-flex;
   flex-wrap: wrap;
 }
-/* Panels flexible layout builder automatically adds its own CSS. Hence we need to rebootstrapify it. */
-/* A better aproach is probably to design a */
 /* Hide text formats */
 .filter-wrapper {
   display: none;
