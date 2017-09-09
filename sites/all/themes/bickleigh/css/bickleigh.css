@@ -6730,13 +6730,13 @@ button.close {
 }
 /* SITE WIDE */
 /* Fonts */
-h1 {
-  font-weight: 700;
-}
+h1,
 h2 {
   font-weight: 700;
-  font-size: 40px;
   color: #8b0e3a;
+}
+.front h2 {
+  font-size: 40px;
 }
 .view h2 {
   font-weight: 400;
