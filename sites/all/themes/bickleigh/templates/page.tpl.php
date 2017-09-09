@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Bickleigh <span class='hidden-sm hidden-xs'>community website</span></a>
+      <a class="navbar-brand" href="/">Bickleigh <span class='hidden-sm hidden-xs'>village website</span></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <?php print theme('links', array(
