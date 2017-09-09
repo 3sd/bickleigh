@@ -7768,14 +7768,6 @@ fieldset[disabled] .links.inline li.focus {
 .links.inline li a {
   color: #fff;
 }
-.view-news .item,
-.view-events .item,
-.view-groups .item {
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  flex-wrap: wrap;
-}
 /* Hide text formats */
 .filter-wrapper {
   display: none;
