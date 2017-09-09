@@ -92,6 +92,7 @@ h2 {
 #block-views-groups-block{
   border-top: 5px solid lighten(@stone, 20%);
   border-top: 5px solid @burgundy;
+  margin-top: 20px;
 }
 
 /* Main section */
@@ -211,11 +212,33 @@ input[type=text], input[type=password]{
 }
 
 .view-news, .view-events, .view-groups{
-  .view-content .item{
-    height: 220px;
+  .item{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    flex-wrap: wrap;
   }
 }
 
+/* Panels flexible layout builder automatically adds its own CSS. Hence we need to rebootstrapify it. */
+/* A better aproach is probably to design a */
+
+// .panels-flexible-region-1-center,
+// .panels-flexible-region-1-right{
+//   float: none;
+//   width: auto;
+// }
+//
+// @media (min-width: 768px){
+//   .panels-flexible-region-1-center{
+//     width: 75%;
+//     float: left;
+//   }
+//   .panels-flexible-region-1-right{
+//     width: 25%;
+//     float: left;
+//   }
+// }
 
 /* Hide text formats */
 

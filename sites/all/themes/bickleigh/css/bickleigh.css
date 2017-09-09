@@ -6779,6 +6779,7 @@ h2 {
 #block-views-groups-block {
   border-top: 5px solid #a7a7a7;
   border-top: 5px solid #8b0e3a;
+  margin-top: 20px;
 }
 /* Main section */
 .main {
@@ -7767,11 +7768,16 @@ fieldset[disabled] .links.inline li.focus {
 .links.inline li a {
   color: #fff;
 }
-.view-news .view-content .item,
-.view-events .view-content .item,
-.view-groups .view-content .item {
-  height: 220px;
+.view-news .item,
+.view-events .item,
+.view-groups .item {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  flex-wrap: wrap;
 }
+/* Panels flexible layout builder automatically adds its own CSS. Hence we need to rebootstrapify it. */
+/* A better aproach is probably to design a */
 /* Hide text formats */
 .filter-wrapper {
   display: none;
