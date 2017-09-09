@@ -8,21 +8,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><?php print $site_name ?></a>
+      <a class="navbar-brand" href="/">Bickleigh <span class='hidden-sm hidden-xs'>community website</span></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-        <?php print theme('links', array(
-          'links' => menu_navigation_links('main-menu'),
-          'attributes' => array( 'class' => array('nav', 'navbar-nav'))
-        ));?>
-      <div class="nav navbar-nav navbar-right">
-        <?php print theme('links', array(
-          'links' => menu_navigation_links('user-menu'),
-          'attributes' => array( 'class' => array('nav', 'navbar-nav'))
-        ));?>
-      </div>
-    </div><!--/.navbar-collapse -->
-  </div>
+      <?php print theme('links', array(
+        'links' => menu_navigation_links('main-menu'),
+        'attributes' => array( 'class' => array('nav', 'navbar-nav'))
+      ));?>
+      <?php print theme('links', array(
+        'links' => menu_navigation_links('user-menu'),
+        'attributes' => array( 'class' => array('nav', 'navbar-nav', 'navbar-right'))
+      ));?>
+    </div>
+  </div><!--/.navbar-collapse -->
 </nav>
 
 <div class="main">
