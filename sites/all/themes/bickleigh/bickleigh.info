@@ -10,4 +10,5 @@ scripts[] = js/bickleigh.js
 
 regions[content] = Content
 regions[adverts] = Adverts
+regions[about] = About
 regions[navbar-right] = Right navbar

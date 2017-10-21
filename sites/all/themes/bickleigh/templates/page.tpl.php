@@ -39,6 +39,13 @@
 
 <div class="adverts">
   <div class="container">
-    <?php print render($page['adverts']); ?>
+    <div class="row">
+      <div class="col-sm-8">
+        <?php print render($page['adverts']); ?>
+      </div>
+      <div class="col-sm-4">
+        <?php print render($page['about']); ?>
+      </div>
+    </div>
   </div>
 </div>
