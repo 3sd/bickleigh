@@ -6742,6 +6742,10 @@ h2 {
   font-weight: 400;
   font-size: 30px;
 }
+.region-adverts .view h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
 /* Colours */
 /* Spacing */
 /* PAGE ELEMENTS */
