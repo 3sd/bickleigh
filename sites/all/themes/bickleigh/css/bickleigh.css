@@ -6742,7 +6742,8 @@ h2 {
   font-weight: 400;
   font-size: 30px;
 }
-.region-adverts .view h2 {
+.region-adverts .view h2,
+.region-about h2 {
   font-weight: 700;
   font-size: 30px;
 }
