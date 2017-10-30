@@ -41,6 +41,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-8">
+        <p><i>Thanks to our generous advertisers and sponsors...</i></p>
         <?php print render($page['adverts']); ?>
       </div>
       <div class="col-sm-4">
