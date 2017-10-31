@@ -6729,7 +6729,7 @@ button.close {
   }
 }
 /* SITE WIDE */
-/* Fonts */
+/* Headers */
 h1,
 h2 {
   font-weight: 700;
@@ -7107,7 +7107,9 @@ fieldset[disabled] .form-submit.focus {
   background-color: #333;
 }
 input[type=text],
-input[type=password] {
+input[type=password],
+input[type=email],
+textarea {
   display: block;
   width: 100%;
   height: 34px;
@@ -7126,47 +7128,72 @@ input[type=password] {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 input[type=text]:focus,
-input[type=password]:focus {
+input[type=password]:focus,
+input[type=email]:focus,
+textarea:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 input[type=text]::-moz-placeholder,
-input[type=password]::-moz-placeholder {
+input[type=password]::-moz-placeholder,
+input[type=email]::-moz-placeholder,
+textarea::-moz-placeholder {
   color: #999;
   opacity: 1;
 }
 input[type=text]:-ms-input-placeholder,
-input[type=password]:-ms-input-placeholder {
+input[type=password]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   color: #999;
 }
 input[type=text]::-webkit-input-placeholder,
-input[type=password]::-webkit-input-placeholder {
+input[type=password]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: #999;
 }
 input[type=text]::-ms-expand,
-input[type=password]::-ms-expand {
+input[type=password]::-ms-expand,
+input[type=email]::-ms-expand,
+textarea::-ms-expand {
   border: 0;
   background-color: transparent;
 }
 input[type=text][disabled],
 input[type=password][disabled],
+input[type=email][disabled],
+textarea[disabled],
 input[type=text][readonly],
 input[type=password][readonly],
+input[type=email][readonly],
+textarea[readonly],
 fieldset[disabled] input[type=text],
-fieldset[disabled] input[type=password] {
+fieldset[disabled] input[type=password],
+fieldset[disabled] input[type=email],
+fieldset[disabled] textarea {
   background-color: #eeeeee;
   opacity: 1;
 }
 input[type=text][disabled],
 input[type=password][disabled],
+input[type=email][disabled],
+textarea[disabled],
 fieldset[disabled] input[type=text],
-fieldset[disabled] input[type=password] {
+fieldset[disabled] input[type=password],
+fieldset[disabled] input[type=email],
+fieldset[disabled] textarea {
   cursor: not-allowed;
 }
 textareainput[type=text],
-textareainput[type=password] {
+textareainput[type=password],
+textareainput[type=email],
+textareatextarea {
+  height: auto;
+}
+textarea {
   height: auto;
 }
 .form-submit {
