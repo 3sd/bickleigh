@@ -6766,7 +6766,13 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+/* Views of images */
+.view.images .views-row {
   margin-bottom: 20px;
+}
+.view.images .views-row img {
+  margin-bottom: 5px;
 }
 /* Nodes */
 .submitted-by {
