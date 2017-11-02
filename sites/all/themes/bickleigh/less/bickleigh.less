@@ -34,6 +34,8 @@ h1, h2 {
 .carousel-caption{
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 10%\;
+  padding-right: 10%\;
   left: 0;
   right: 0;
   bottom: 0;
@@ -42,7 +44,6 @@ h1, h2 {
     font-weight: 700;
     font-size: 700;
     color: #fff;
-    font-size: 25px;
   }
 }
 
@@ -149,18 +150,19 @@ img{
 @btn-primary-bg: lighten(@teal, 8);
 @btn-primary-border: @btn-primary-bg;
 
-.view-news .more-link{
-  padding-right: 15px;
-  .text-center;
-  a{
-    .btn;
-    .btn-primary;
-    .btn-sm;
-    font-size: 13px;
-    font-weight: 700;
+.view-news, .view-events {
+  .more-link{
+    padding-right: 15px;
+    .text-center;
+    a{
+      .btn;
+      .btn-primary;
+      .btn-sm;
+      font-size: 13px;
+      font-weight: 700;
+    }
   }
 }
-
 /* Events */
 
 .view-events{
