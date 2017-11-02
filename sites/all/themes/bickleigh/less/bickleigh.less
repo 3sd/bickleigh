@@ -12,8 +12,13 @@ h1, h2 {
   color: @burgundy;
 }
 
-.front h2 {
-  font-size: 40px;
+.front{
+  h2 {
+    font-size: 40px;
+  }
+  .navbar{
+    margin-bottom: 0px;
+  }
 }
 
 .view h2{
@@ -138,6 +143,61 @@ img{
 .main{
   padding-bottom: @large-padding;
 }
+
+/* News */
+
+@btn-primary-bg: lighten(@teal, 8);
+@btn-primary-border: @btn-primary-bg;
+
+.view-news .more-link{
+  padding-right: 15px;
+  .text-center;
+  a{
+    .btn;
+    .btn-primary;
+    .btn-sm;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+
+/* Events */
+
+.view-events{
+  h2{
+    margin-top: 0px;
+  }
+  .views-row{
+    margin-top: 20px;
+  }
+}
+
+/* - dates */
+
+.fancy-date{
+  &:hover{
+    background-color: @teal;
+  }
+  float:left;
+  font-weight: 700;
+  .panel;
+  background-color: @btn-primary-bg;
+  color: #fff;
+  padding: 3px 9px;
+  margin-right: 10px;
+  text-align: center;
+  .day{
+    font-size: 180%;
+    line-height: 100%;
+  }
+  .month{
+    font-size: 90%;
+    text-transform: uppercase;
+  }
+
+}
+
+
 
 /* Adverts */
 
